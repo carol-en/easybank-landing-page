@@ -1,21 +1,11 @@
 @import "./style/_reset";
 @import "./style/variables";
 
-body {
-    font-family: $public-sans;
-    font-weight: 300;
-    font-size: 105%;
-    line-height: 1.50;
-}
 
 div#root {
     width: 75%;
     margin: 0 auto;
     border: 1px solid gold;
-}
-
-a {
-    color: $bright-cyan;
 }
 
 .attribution {

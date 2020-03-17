@@ -1,3 +1,5 @@
+@import "./variables";
+
 * {
     padding: 0;
     margin: 0;
@@ -9,8 +11,10 @@
 body {
     width: 100vw;
     height: 100vh;
-    line-height: 1;
-    font-size: 100%;
+    font-family: $public-sans;
+    font-weight: 300;
+    font-size: 105%;
+    line-height: 1.50;
 }
 
 table {
@@ -29,4 +33,5 @@ img {
 
 a {
     text-decoration: none;
+    color: $bright-cyan;
 }
