@@ -1,3 +1,3 @@
-import Layout from './layout';
+import {  Nav, Footer } from "./layout";
 
-export default Layout;
+export {  Nav, Footer };

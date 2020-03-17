@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import "./root.scss";
+import { Nav, Footer } from "./Layout";
+import Home from "./Home";
 
 class Root extends Component {
-  return() {
-    render(
-      <>
-      <h1>Root Component</h1>
-      </>
-    )
-  }
+render() {
+  return (
+    <>
+    <Nav />
+    <Home />
+    <Footer />
+    </>
+  )
+}
 }
 
 export default Root;

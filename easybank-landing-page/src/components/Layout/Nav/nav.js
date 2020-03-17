@@ -2,10 +2,17 @@ import React, { Component } from 'react';
 import "./nav.scss";
 
 class Nav extends Component {
-  return() {
-    render(
+  render() {
+    return(
       <>
       <h1>Nav Component</h1>
+      Home
+      About
+      Contact
+      Blog
+      Careers
+
+      Request Invite
       </>
     )
   }

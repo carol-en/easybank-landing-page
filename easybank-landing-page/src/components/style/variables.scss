@@ -1,4 +1,40 @@
 
-body {
-    background: cyan;
+
+// ==================
+// COLORS
+// ==================
+
+// Primary Colors
+$dark-blue: #2d314d;
+$lime-green: #31d35c;
+$bright-cyan: #2bb7da;
+
+//  Neutral Colors
+$grayish-blue: #9698a6;
+$light-grayish-blue: #f3f4f6;
+$very-light-gray: #fafafa;
+$white: #ffffff;
+$black: #000000;
+
+// ==================
+// FONTS
+// ==================
+
+@import url('https://fonts.googleapis.com/css?family=Public+Sans:300,300i,400,400i&display=swap');
+$public-sans: 'Public Sans', sans-serif;
+
+////////////////////////
+// EXTENTIONS
+////////////////////////
+%transitions {
+    -webkit-transition: all 0.3s 0s ease-in-out;
+    -moz-transition: all 0.3s 0s ease-in-out;
+    -o-transition: all 0.3s 0s ease-in-out;
+    transition: all 0.3s 0s ease-in-out;
 }
+
+////////////////////////
+// MEDIA QUERIES
+////////////////////////
+$breakpoint-desktop: 1440px;
+$breakpoint-mobile: 375px;

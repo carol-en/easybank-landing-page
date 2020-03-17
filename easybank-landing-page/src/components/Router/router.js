@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 class Router extends Component {
-  return() {
-    render(
+  render() {
+    return(
       <>
       <h1>Router Component</h1>
       </>

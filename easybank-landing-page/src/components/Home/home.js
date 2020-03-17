@@ -5,10 +5,13 @@ import Hero from "./hero";
 import Why from "./why";
 
 class Home extends Component {
-  return() {
-    render(
+  render() {
+    return (
       <>
       <h1>Home Component</h1>
+      <Hero />
+      <Articles />
+      <Why />
       </>
     )
   }
