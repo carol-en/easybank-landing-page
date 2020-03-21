@@ -33,6 +33,9 @@ $public-sans: 'Public Sans', sans-serif;
     transition: all 0.3s 0s ease-in-out;
 }
 
+%gradient-bg {
+    background-image: linear-gradient(to right, #31d35c, #00d192, #00cbbb, #00c2d4, #2bb7da);
+}
 ////////////////////////
 // MEDIA QUERIES
 ////////////////////////
