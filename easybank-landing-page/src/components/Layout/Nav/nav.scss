@@ -20,6 +20,7 @@ a.nav-link {
     text-align: center;
     padding: 1rem;
     margin: 0 2em;
+    display: none;
 }
 
 a.nav-link:first-of-type {
@@ -36,9 +37,14 @@ a.nav-link:hover {
     background: darken($very-light-gray, 10);
 }
 
-button.gradient-btn {
+.gradient-btn {
     padding: .75rem;
     width: 10em;
     margin: 0 auto;
     color: $white;
+    display: none;
+}
+
+nav .active {
+    display: block;
 }

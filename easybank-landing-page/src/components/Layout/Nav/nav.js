@@ -6,30 +6,38 @@ import "./nav.scss";
 
 class Nav extends Component {
 
-  navRef = React.createRef();
-
-  componentDidMount() {
-    console.log("Loaded");
+  state = {
+    navOpen: null
   }
 
-  clickBtn = (event) => {
-   console.log(event.target);  
+  componentDidMount() {
+    this.setState({ navOpen: false });
+  }
+
+  toggleMobileNav = () => { 
+   this.setState({ navOpen:!this.state.navOpen });
   }
 
   render() {
-    return(
-      <nav ref={this.navRef} onClick={this.clickBtn}>
-      <button className="logo-link">
-        <img src={Logo} alt="Easy Bank"/>
-        <img src={CloseIcon} alt="Close Navigation"/>
-      </button>
-      <a  className="nav-link" href="#">Home</a>
-      <a  className="nav-link" href="#">About</a>
-      <a  className="nav-link" href="#">Contact</a>
-      <a  className="nav-link" href="#">Blog</a>
-      <a  className="nav-link" href="#">Careers</a>
+    const { navOpen } = this.state;
+    const active= navOpen && "active";
+    const navLink = `nav-link ${active}`;
+    const gradientBtn = `gradient-btn ${active}`;
 
-      <button className="gradient-btn">Request Invite</button>
+    return(
+      <nav onClick={this.toggleMobileNav}>
+        <button className="logo-link">
+          <img src={Logo} alt="Easy Bank"/>
+          <img src={CloseIcon} alt="Close Navigation"/>
+        </button>
+        
+        <a  className={navLink} href="#">Home</a>
+        <a  className={navLink} href="#">About</a>
+        <a  className={navLink} href="#">Contact</a>
+        <a  className={navLink} href="#">Blog</a>
+        <a  className={navLink} href="#">Careers</a>
+
+        <button className={gradientBtn}>Request Invite</button>
       </nav>
     )
   }
