@@ -48,3 +48,11 @@ button.gradient-btn {
 nav .active {
     display: block;
 }
+
+img.close-x {
+    opacity: 1;
+
+    @media(min-width: $breakpoint-desktop) {
+        opacity: 0;
+    }
+}
