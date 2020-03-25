@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import { Link } from "react-router-dom";
 import Logo from "./images/logo.svg";
 import CloseIcon from "./images/icon-close.svg";
+import HamburgerIcon from "./images/icon-hamburger.svg";
 import "./nav.scss";
 
 class Nav extends Component {
@@ -39,13 +40,14 @@ class Nav extends Component {
     const { navOpen } = this.state;
     const active= navOpen && "active";
     const navLink = `nav-link ${active}`;
-    const gradientBtn = `gradient-btn ${active}`;
+    const gradientBtn = `gradient-btn nav-btn ${active}`;
+    const openX = `open-x ${navOpen && "close-x"}`;
 
     return(
       <nav onClick={this.toggleMobileNav}>
         <button className="logo-link">
-          <img className="bank-logo" src={Logo} alt="Easy Bank"/>
-          <img className="close-x" src={CloseIcon} alt="Close Navigation"/>
+          <span className="bank-logo" />
+          <span className={openX} />
         </button>
         
         <a  className={navLink} href="https://google.com">Home</a>

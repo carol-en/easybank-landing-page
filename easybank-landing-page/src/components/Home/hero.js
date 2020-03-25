@@ -4,16 +4,15 @@ import "./home.scss";
 class Hero extends Component {
   render() {
     return(
-      <>
-      <h1>Hero Component</h1>
+      <section className="hero">
+         <h1 className="lead">Next generation digital banking</h1>
 
-          Next generation digital banking
+          <p>
+            Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
+          </p>
 
-          Take your financial life online. Your Easybank account will be a one-stop-shop 
-          for spending, saving, budgeting, investing, and much more.
-
-          Request Invite
-      </>
+          <button className="gradient-btn">Request Invite</button>
+      </section>
     )
   }
 }

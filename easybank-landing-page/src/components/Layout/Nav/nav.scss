@@ -13,6 +13,31 @@ nav .logo-link {
     padding: 1.25rem;
 }
 
+span.bank-logo {
+    // background: pink;
+    background: url("./images/logo.svg")left center no-repeat;
+    width: 50%;
+    height: 1.25rem;
+}
+
+span.open-x {
+    background: url("./images/icon-hamburger.svg")right center no-repeat;
+    width: 50%;
+    height: 1.25rem;
+    display: initial;
+    
+    @media (min-width: $breakpoint-desktop) {
+        display: none;
+    }
+}
+
+span.close-x {
+    background: url("./images/icon-close.svg")right center no-repeat;
+    @media (min-width: $breakpoint-desktop) {
+        display: none;
+    }
+}
+
 a.nav-link {
     background: $very-light-gray;
     color: $dark-blue;
@@ -22,6 +47,7 @@ a.nav-link {
     margin: 0 2em;
     display: none;
 }
+
 
 a.nav-link:first-of-type {
     margin-top: 2em;
@@ -37,22 +63,11 @@ a.nav-link:hover {
     background: darken($very-light-gray, 10);
 }
 
-button.gradient-btn {
-    padding: .75rem;
-    width: 10em;
-    margin: 0 auto;
-    color: $white;
+
+.nav-btn {
     display: none;
 }
 
 nav .active {
     display: block;
-}
-
-img.close-x {
-    opacity: 1;
-
-    @media(min-width: $breakpoint-desktop) {
-        opacity: 0;
-    }
 }

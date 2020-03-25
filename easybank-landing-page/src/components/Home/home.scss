@@ -2,3 +2,17 @@
 @import "./style/articles";
 @import "./style/hero";
 @import "./style/why";
+
+section {
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    background: $very-light-gray;
+
+    p {
+        color: darken($light-grayish-blue, 40);
+        font-size: .95em;
+        line-height: 2em;
+        padding: 1rem;
+    }
+}
