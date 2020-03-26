@@ -1,0 +1,39 @@
+
+section.why {
+    background: $light-grayish-blue;
+    padding: 5rem 0;
+}
+
+
+h2.why-lead {
+    font-size: 1.85em;
+}
+
+h3.why-title {
+    font-size: 1.40em;
+}
+
+span.choose-icons {
+    display: block;
+    width: 5em;
+    height: 5em;
+    margin: 0 auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.online-banking {
+    background: url("../images/icons/icon-online.svg");
+}
+
+.simple-budgeting {
+    background: url("../images/icons/icon-budgeting.svg");
+}
+
+.fast-onboarding {
+    background: url("../images/icons/icon-onboarding.svg");
+}
+
+.open-api {
+    background: url("../images/icons/icon-api.svg");
+}

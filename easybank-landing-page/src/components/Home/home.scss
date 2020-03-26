@@ -5,14 +5,18 @@
 
 section {
     text-align: center;
-    margin: 0;
-    padding: 1rem;
-    background: $very-light-gray;
 
     p {
         color: darken($light-grayish-blue, 40);
         font-size: .95em;
         line-height: 2em;
-        padding: 1rem;
+        padding: 0 2rem;
+        margin-bottom: 3em;
     }
+}
+
+h1, h2, h3 {
+    color: $dark-blue;
+    line-height: 1.25em;
+    margin: 0.75em 0;
 }

@@ -8,10 +8,9 @@ class Home extends Component {
   render() {
     return (
       <>
-      <h1>Home Component</h1>
       <Hero />
-      <Articles />
       <Why />
+      <Articles />
       </>
     )
   }

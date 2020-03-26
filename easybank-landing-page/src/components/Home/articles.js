@@ -4,10 +4,9 @@ import "./home.scss";
 class Articles extends Component {
   render() {
     return(
-      <>
-      <h1>Articles Component</h1>
+      <section className="articles">
         
-          Latest Articles
+          <h1 className="lead-articles">Latest Articles</h1>
 
           By Claire Robinson
           Receive money in any currency with no fees
@@ -28,7 +27,7 @@ class Articles extends Component {
           Our invite-only Beta accounts are now live!
           After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
           It’s easy to request an invite through the site ...
-      </>
+      </section>
     )
   }
 }
