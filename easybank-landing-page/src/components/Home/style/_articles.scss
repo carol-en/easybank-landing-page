@@ -9,3 +9,21 @@ h1.lead-articles {
     font-size: 2em;
     margin: 0;
 }
+
+article.featured-article {
+    background: $white;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+    margin: 1em 1.5em;
+    text-align: left;
+}
+
+aside.article-hero a img {
+    -webkit-border-top-left-radius: 1em;
+    -webkit-border-top-right-radius: 1em;
+    -moz-border-radius-topleft: 1em;
+    -moz-border-radius-topright: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
