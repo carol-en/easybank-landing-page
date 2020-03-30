@@ -2,6 +2,8 @@
 section.why {
     background: $light-grayish-blue;
     padding: 5rem 0;
+    display: flex;
+    flex-flow: nowrap column;
 }
 
 

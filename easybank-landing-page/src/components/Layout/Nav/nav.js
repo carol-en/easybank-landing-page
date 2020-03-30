@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 // import { Link } from "react-router-dom";
-import Logo from "./images/logo.svg";
-import CloseIcon from "./images/icon-close.svg";
-import HamburgerIcon from "./images/icon-hamburger.svg";
 import "./nav.scss";
 
 class Nav extends Component {
@@ -55,8 +52,7 @@ class Nav extends Component {
         <a  className={navLink} href="https://google.com">Contact</a>
         <a  className={navLink} href="https://google.com">Blog</a>
         <a  className={navLink} href="https://google.com">Careers</a>
-
-        <button className={gradientBtn}>Request Invite</button>
+        
       </nav>
     )
   }
