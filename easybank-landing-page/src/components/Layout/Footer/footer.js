@@ -1,23 +1,32 @@
 import React, { Component } from 'react';
 import "./footer.scss";
+import { logo } from "./images";
 
 class Footer extends Component {
   render() {
     return(
-      <>
-      <h1>Footer Component</h1>
-      
-        About Us
-        Contact
-        Blog
-        Careers
-        Support
-        Privacy Policy
+      <footer>
+        <span className="logo" />
+        <aside className="social-medias">
+          <a href="/"><img src={`${logo}.svg`} /></a>
+          <a href="/"></a>
+          <a href="/"></a>
+          <a href="/"></a>
+          <a href="/"></a>
+        </aside>
 
-        Request Invite
+        {/* https://www.freecodecamp.org/forum/t/importing-images-in-react/206974/3 */}
+          About Us
+          Contact
+          Blog
+          Careers
+          Support
+          Privacy Policy
 
-        © Easybank. All Rights Reserved
-      </>
+          Request Invite
+
+          © Easybank. All Rights Reserved
+      </footer>
     )
   }
 }
