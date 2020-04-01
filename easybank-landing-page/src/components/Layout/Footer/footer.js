@@ -18,17 +18,18 @@ class Footer extends Component {
           <a href="https://instagram.com"><img src={iconInstagram} alt="Instagram"/></a>
         </aside>
 
-        {/* https://www.freecodecamp.org/forum/t/importing-images-in-react/206974/3 */}
-          About Us
-          Contact
-          Blog
-          Careers
-          Support
-          Privacy Policy
 
-          Request Invite
+        <ul className="site-map">
+          <li><a href="/">About Us</a></li>
+          <li><a href="/">Contact</a></li>
+          <li><a href="/">Blog</a></li>
+          <li><a href="/">Careers</a></li>
+          <li><a href="/">Support</a></li>
+          <li><a href="/">Privacy Policy</a></li>
+        </ul>
 
-          © Easybank. All Rights Reserved
+        <button className="gradient-btn">Request Invite</button>
+          <p className="copyright">© Easybank. All Rights Reserved</p>
       </footer>
     )
   }

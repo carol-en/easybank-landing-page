@@ -36,8 +36,7 @@ class Nav extends Component {
   render() {
     const { navOpen } = this.state;
     const active= navOpen && "active";
-    const navLink = `nav-link ${active}`;
-    const gradientBtn = `gradient-btn nav-btn ${active}`;
+    const wrap = `wrap ${active}`;
     const openX = `open-x ${navOpen && "close-x"}`;
 
     return(
@@ -46,13 +45,15 @@ class Nav extends Component {
           <span className="bank-logo" />
           <span className={openX} />
         </button>
-        
-        <a  className={navLink} href="https://google.com">Home</a>
-        <a  className={navLink} href="https://google.com">About</a>
-        <a  className={navLink} href="https://google.com">Contact</a>
-        <a  className={navLink} href="https://google.com">Blog</a>
-        <a  className={navLink} href="https://google.com">Careers</a>
-        
+
+        <div className={wrap}>
+          <a  className="nav-link" href="https://google.com">Home</a>
+          <a  className="nav-link" href="https://google.com">About</a>
+          <a  className="nav-link" href="https://google.com">Contact</a>
+          <a  className="nav-link" href="https://google.com">Blog</a>
+          <a  className="nav-link" href="https://google.com">Careers</a>
+        </div>
+
       </nav>
     )
   }

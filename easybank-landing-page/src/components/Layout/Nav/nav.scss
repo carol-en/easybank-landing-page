@@ -1,11 +1,28 @@
 @import "../layout";
 
 nav {
-    display: flex;
-    flex-flow: nowrap column;
+    position: relative;
+    width: 100%;
+
+    .wrap {
+        background: rgba(0, 0, 0, 0.55);
+        width: 100%;
+        min-height: 100vh;
+        display: none;
+        flex-flow: nowrap column;
+        position: absolute;
+        top: 3.50em;
+        left: 0;
+        z-index: 1;
+
+    }
+    .active {
+        display: flex;
+    }
 }
 
 nav .logo-link {
+    width: 100%;
     background: $very-light-gray;
     display: flex;
     flex-flow: nowrap row;
@@ -44,7 +61,6 @@ a.nav-link {
     text-align: center;
     padding: 1rem;
     margin: 0 2em;
-    display: none;
 }
 
 
@@ -62,11 +78,3 @@ a.nav-link:hover {
     background: darken($very-light-gray, 10);
 }
 
-
-.nav-btn {
-    display: none;
-}
-
-nav .active {
-    display: block;
-}

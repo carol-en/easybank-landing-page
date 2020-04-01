@@ -4,14 +4,29 @@ footer {
     background: $dark-blue;
     color: $grayish-blue;
     text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-flow: nowrap column;
 
     a {
         color: $white;
     }
 
+    a:hover {
+        color: $bright-cyan;
+    }
+
+    button.gradient-btn {
+        margin: 1.5em auto;
+    }
+
+    p.copyright {
+        font-size: .85em;
+    }
+
     aside.social-medias a {
         padding: 0;
-        margin:  1em .25em;
+        margin:  2em .25em;
         display: inline-block;
         
     }
@@ -31,4 +46,14 @@ span.logo {
     width: 100%;
     height: 1.25rem;
     display: block;
+}
+
+ul.site-map {
+    display: flex;
+    flex-flow: nowrap column;
+
+    li {
+        padding-bottom: 1rem;
+        font-size: .85em;
+    }
 }
