@@ -6,6 +6,10 @@ div#root {
     width: 75%;
     margin: 0 auto;
     // border: 1px solid gold;
+
+    @media (min-width: $breakpoint-desktop) {
+        width: 100%;
+    }
 }
 
 .attribution {

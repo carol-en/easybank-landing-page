@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Button from "./button";
+import Navigation from "./navigation";
 // import { Link } from "react-router-dom";
 import "./nav.scss";
 
@@ -16,7 +18,7 @@ class Nav extends Component {
   setLayout = () => {
     window.addEventListener("resize", () => {
       const mobile = window.innerWidth < 900;
-      const desktop = window.innerWidth > 900;
+      const desktop = window.innerWidth >= 900;
   
       if(mobile) {
         this.setState({ navOpen: false });
@@ -26,34 +28,26 @@ class Nav extends Component {
     });
   }
  
-  toggleMobileNav = () => { 
+  toggleMobileNav = (event) => { 
     const mobile = window.innerWidth < 900;
+    const desktop = window.innerWidth >= 900;
     if(mobile) {
       this.setState({ navOpen:!this.state.navOpen });
+    } else if(desktop) {
+        window.location= "/";
     }
   }
 
   render() {
     const { navOpen } = this.state;
-    const active= navOpen && "active";
+    const active= navOpen ? "active" : undefined;
     const openX = `open-x ${navOpen && "close-x"}`;
 
     return(
       <header>
-          <button className="logo-link" onClick={this.toggleMobileNav}>
-            <span className="bank-logo" />
-            <span className={openX} />
-          </button>
-
-          <nav className={active}>
-            <div className="wrap">
-              <a  className="nav-link" href="https://google.com">Home</a>
-              <a  className="nav-link" href="https://google.com">About</a>
-              <a  className="nav-link" href="https://google.com">Contact</a>
-              <a  className="nav-link" href="https://google.com">Blog</a>
-              <a  className="nav-link" href="https://google.com">Careers</a>
-            </div>
-          </nav>
+          <Button toggleMobileNav={this.toggleMobileNav} openX= {openX}/>
+          <Navigation active={active} toggleMobileNav={this.toggleMobileNav} />
+          <button className="gradient-btn">Request Invite</button>
       </header>
     )
   }
