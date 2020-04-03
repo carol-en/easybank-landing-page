@@ -1,17 +1,31 @@
 
 
-h1.lead {
-    font-size: 2.5em;
-}
-
 section.hero {
-    display: flex;
-    flex-flow: nowrap column;
-    padding-bottom: 6rem;
+    width: 100%;
     background: $very-light-gray;
 
     @media(min-width: $breakpoint-desktop) {
+        background: $very-light-gray url("../images/bg-intro-desktop.svg")right top no-repeat;
+        background-size: 100%;
+    }
+
+    h1.lead {
+        font-size: 2.5em;
+    }
+}
+
+main.container {
+    width: 100%;
+    display: flex;
+    flex-flow: nowrap column;
+    padding-bottom: 6rem;
+
+    @media(min-width: $breakpoint-desktop) {
         flex-flow: nowrap row;
+        justify-content: center;
+        padding-bottom: 0;
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
@@ -20,12 +34,13 @@ aside.blurb {
 
     @media(min-width: $breakpoint-desktop) {
         order: 1;
-        padding: 0;
         text-align: left;
+        padding: 10rem 0;
+        padding-left: 5rem;
     }
 }
 
-header.hero-images {
+aside.hero-images {
     width: 100%;
     height: 20rem;
     order: 1;
@@ -35,11 +50,12 @@ header.hero-images {
 
     @media(min-width: $breakpoint-desktop) {
         order: 2;
-        height: 100vh;
+        height: 75vh;
+        background: none;
     }
 }
 
-aside.inner-header {
+div.inner-header {
     background: url("../images/image-mockups.png") bottom center no-repeat;
     background-size: 85%;
     width: 100%;

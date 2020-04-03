@@ -8,8 +8,10 @@ header {
 
     @media (min-width: $breakpoint-desktop) {
         flex-flow: nowrap row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         background:  $white;
+        max-width: 70%;
+        margin: 0 auto;
     }
 
     button.gradient-btn {
