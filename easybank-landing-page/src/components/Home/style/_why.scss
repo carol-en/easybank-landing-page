@@ -4,6 +4,17 @@ section.why {
     padding: 5rem 0;
     display: flex;
     flex-flow: nowrap column;
+    
+    @media(min-width: $breakpoint-desktop) {
+        flex-flow: nowrap row;
+        text-align: left;
+    }
+}
+
+aside.why-main {
+    @media(min-width: $breakpoint-desktop) {
+        width: 100%;
+    }
 }
 
 

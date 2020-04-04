@@ -5,8 +5,8 @@ section.hero {
     background: $very-light-gray;
 
     @media(min-width: $breakpoint-desktop) {
-        background: $very-light-gray url("../images/bg-intro-desktop.svg")right top no-repeat;
-        background-size: 100%;
+        background: $very-light-gray url("../images/bg-intro-desktop.svg")150% center no-repeat;
+        background-size: 70%;
     }
 
     h1.lead {
@@ -31,12 +31,14 @@ main.container {
 
 aside.blurb {
     order: 2;
+    width: 100%;
 
     @media(min-width: $breakpoint-desktop) {
         order: 1;
         text-align: left;
         padding: 10rem 0;
         padding-left: 5rem;
+        width: 50%;
     }
 }
 
@@ -50,7 +52,7 @@ aside.hero-images {
 
     @media(min-width: $breakpoint-desktop) {
         order: 2;
-        height: 75vh;
+        height: 65vh;
         background: none;
     }
 }
@@ -63,4 +65,11 @@ div.inner-header {
     top: 0;
     left: 0;
     position: absolute;
+
+    @media(min-width: $breakpoint-desktop) {
+        height: 100vh;
+        background-size: 80%;
+        background-position: top right;
+        left: 15em;
+    }
 }
