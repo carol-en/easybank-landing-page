@@ -2,15 +2,31 @@
 
 section.articles {
     background: $very-light-gray;
-    padding: 5rem 0;
-    display: flex;
-    flex-flow: nowrap column;
+
+    main.container {
+        padding: 5rem 0;
+        display: flex;
+        flex-flow: nowrap column;
+
+        @media(min-width: $breakpoint-desktop) {
+            flex-flow: wrap row;
+            width: 80%;
+            margin: 0 auto;
+            padding-left: 5rem;
+        }
+    }
 }
 
 h1.lead-articles {
     font-size: 2em;
     margin: 0;
     width: 100%;
+
+    @media(min-width: $breakpoint-desktop) {
+        text-align: left;
+        margin-bottom: 1.25em;
+        font-size: 2.5em;
+    }
 }
 
 article.featured-article {
@@ -20,26 +36,47 @@ article.featured-article {
     border-radius: .35em;
     margin: 1em 1.5em;
     text-align: left;
+
+    @media(min-width: $breakpoint-desktop) {
+        width: 23%;
+        margin: 0;
+        margin-right: 2%;
+    }
 }
 
-aside.article-hero img {
-    margin: 0 auto;
-    display: block;
-    -webkit-border-top-left-radius:.35em;
-    -webkit-border-top-right-radius: .35em;
-    -moz-border-radius-topleft: .35em;
-    -moz-border-radius-topright: .35em;
-    border-top-left-radius: .35em;
-    border-top-right-radius: .35em;
+aside.article-hero {
+    img {
+        display: block;
+        margin: 0 auto;
+
+        @media(min-width: $breakpoint-desktop) {
+            object-fit: cover;
+            height: 12em;
+        }
+        -webkit-border-top-left-radius:.35em;
+        -webkit-border-top-right-radius: .35em;
+        -moz-border-radius-topleft: .35em;
+        -moz-border-radius-topright: .35em;
+        border-top-left-radius: .35em;
+        border-top-right-radius: .35em;
+    }
 }
 
 aside.article-content {
     padding: 2rem;
 
+    @media(min-width: $breakpoint-desktop) {
+        padding: 1.5rem;
+    }
+
     p {
         padding: 0;
         font-size: .75em;
         line-height: 1.75em;
+
+        @media(min-width: $breakpoint-desktop) {
+            margin: 0;
+        }
     }
 
     span.author {
@@ -47,13 +84,13 @@ aside.article-content {
         font-size: .5em;
     }
 
-    h2 {
+    h2.article-title {
         color: $black;
         font-size: .97em;
         @extend %transitions;
     }
 
-    h2:hover {
+    h2.article-title:hover {
         color: $bright-cyan;
     }
 }

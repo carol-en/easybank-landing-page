@@ -9,25 +9,22 @@ section.hero {
         background-size: 70%;
     }
 
-    h1.lead {
-        font-size: 2.5em;
+    main.container {
+        width: 100%;
+        display: flex;
+        flex-flow: nowrap column;
+        padding-bottom: 6rem;
+    
+        @media(min-width: $breakpoint-desktop) {
+            flex-flow: nowrap row;
+            justify-content: center;
+            padding-bottom: 0;
+            width: 80%;
+            margin: 0 auto;
+        }
     }
 }
 
-main.container {
-    width: 100%;
-    display: flex;
-    flex-flow: nowrap column;
-    padding-bottom: 6rem;
-
-    @media(min-width: $breakpoint-desktop) {
-        flex-flow: nowrap row;
-        justify-content: center;
-        padding-bottom: 0;
-        width: 80%;
-        margin: 0 auto;
-    }
-}
 
 aside.blurb {
     order: 2;
@@ -36,9 +33,24 @@ aside.blurb {
     @media(min-width: $breakpoint-desktop) {
         order: 1;
         text-align: left;
-        padding: 10rem 0;
+        padding: 5rem 0;
         padding-left: 5rem;
-        width: 50%;
+        width: 70%;
+
+        p {
+            padding: 1.5em 0;
+            margin: 0;
+        }
+    }
+
+
+    h1.lead {
+        font-size: 2.5em;
+
+        @media(min-width: $breakpoint-desktop) {
+            font-size: 3.25em;
+            margin: 0;
+        }
     }
 }
 
@@ -67,6 +79,7 @@ div.inner-header {
     position: absolute;
 
     @media(min-width: $breakpoint-desktop) {
+        position: absolute;
         height: 100vh;
         background-size: 80%;
         background-position: top right;
