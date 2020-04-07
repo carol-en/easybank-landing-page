@@ -11,7 +11,9 @@ class Articles extends Component {
             <article className="featured-article">
             <a href="/">
               <aside className="article-hero">
+                <figure>
                     <img src="https://i.imgur.com/7QhsNZ9.jpg" alt="Receive money in any currency with no fees" />
+                </figure>
               </aside>
 
               <aside className="article-content">
@@ -31,7 +33,9 @@ class Articles extends Component {
             <article className="featured-article">
             <a href="/">
               <aside className="article-hero">
+                <figure>
                   <img src="https://i.imgur.com/W3Dd8YE.jpg" alt="Treat yourself without worrying about money" />
+                </figure>
               </aside>
               
               <aside className="article-content">
@@ -50,7 +54,9 @@ class Articles extends Component {
             <article className="featured-article">
             <a href="/">
               <aside className="article-hero">
-                    <img src="https://i.imgur.com/WTuels2.jpg" alt="Take your Easybank card wherever you go" />
+                <figure>
+                  <img src="https://i.imgur.com/WTuels2.jpg" alt="Take your Easybank card wherever you go" />
+                </figure>
               </aside>
 
               <aside className="article-content">
@@ -69,7 +75,9 @@ class Articles extends Component {
             <article className="featured-article">
             <a href="/">
               <aside className="article-hero">
-                    <img src="https://i.imgur.com/PdPfHuA.jpghttps://i.imgur.com/PdPfHuA.jpg" alt="Our invite-only Beta accounts are now live!" />
+                <figure>
+                  <img src="https://i.imgur.com/PdPfHuA.jpghttps://i.imgur.com/PdPfHuA.jpg" alt="Our invite-only Beta accounts are now live!" />
+                </figure>
               </aside>
 
               <aside className="article-content">

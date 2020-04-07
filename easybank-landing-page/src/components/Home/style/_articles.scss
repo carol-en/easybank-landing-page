@@ -42,17 +42,19 @@ article.featured-article {
         margin: 0;
         margin-right: 2%;
     }
+
 }
 
 aside.article-hero {
+    width: 100%;
+    height: 100%;
+    background: yellow;
     img {
         display: block;
         margin: 0 auto;
+        object-fit: fill;
+        display: none;
 
-        @media(min-width: $breakpoint-desktop) {
-            object-fit: cover;
-            height: 12em;
-        }
         -webkit-border-top-left-radius:.35em;
         -webkit-border-top-right-radius: .35em;
         -moz-border-radius-topleft: .35em;
@@ -63,6 +65,10 @@ aside.article-hero {
 }
 
 aside.article-content {
+    width: 100%;
+    height: 100%;
+    background: pink;
+    // overflow: hidden;
     padding: 2rem;
 
     @media(min-width: $breakpoint-desktop) {
