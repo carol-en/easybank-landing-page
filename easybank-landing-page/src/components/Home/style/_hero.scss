@@ -18,7 +18,7 @@ section.hero {
         @media(min-width: $breakpoint-desktop) {
             flex-flow: nowrap row;
             justify-content: center;
-            padding-bottom: 0;
+            padding: 5em 0;
             width: 80%;
             margin: 0 auto;
         }
@@ -33,8 +33,6 @@ aside.blurb {
     @media(min-width: $breakpoint-desktop) {
         order: 1;
         text-align: left;
-        padding: 5rem 0;
-        padding-left: 5rem;
         width: 70%;
 
         p {
@@ -64,8 +62,9 @@ aside.hero-images {
 
     @media(min-width: $breakpoint-desktop) {
         order: 2;
-        height: 65vh;
+        height: 35vh;
         background: none;
+        z-index: 1;
     }
 }
 
@@ -74,9 +73,7 @@ div.inner-header {
     background-size: 85%;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
+    position: static;
 
     @media(min-width: $breakpoint-desktop) {
         position: absolute;
@@ -84,5 +81,6 @@ div.inner-header {
         background-size: 80%;
         background-position: top right;
         left: 15em;
+        top: -15em;
     }
 }

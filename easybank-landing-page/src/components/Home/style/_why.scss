@@ -12,7 +12,6 @@ section.why {
             text-align: left;
             width: 80%;
             margin: 0 auto;
-            padding-left: 5rem;
         }
     }
 }
@@ -46,7 +45,7 @@ aside.why-cards {
 
     @media(min-width: $breakpoint-desktop) {
         width: 23%;
-        margin-right: 2%;
+        margin: 0 1%;
 
         p {
             margin: 0;

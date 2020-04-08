@@ -45,9 +45,11 @@ class Nav extends Component {
 
     return(
       <header>
+        <main className="container">
           <Button toggleMobileNav={this.toggleMobileNav} openX= {openX}/>
           <Navigation active={active} toggleMobileNav={this.toggleMobileNav} />
           <button className="gradient-btn">Request Invite</button>
+        </main>
       </header>
     )
   }
