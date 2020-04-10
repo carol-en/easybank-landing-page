@@ -1,21 +1,38 @@
 @import "./style/reset.scss";
 @import "./style/variables";
 
+body, html {
+    background: $white;
+}
+
 
 div#root {
-    width: 75%;
-    margin: 0 auto;
-    // border: 1px solid gold;
-
-    @media (min-width: $breakpoint-desktop) {
-        width: 100%;
-    }
+    width: 100%;
+    overflow: hidden;
+    z-index: 3;
 }
 
 .attribution {
-    width: 75%;
-    margin: 0 auto;
-    // border: 1px solid gold;
+    width: 100%;
+    font-size: 65%;
+    text-align: center;
+    padding: 1rem .5em;
+    background: $dark-blue;
+    color: $grayish-blue;
+
+    @media (min-width: $breakpoint-desktop) {
+        padding: 1rem;
+        font-size: 75%;
+        text-align: left;
+    }
+
+    p {
+        width: 100%;
+        @media (min-width: $breakpoint-desktop) {
+            margin: 0 auto;
+            width: 80%;
+        }
+    }
 }
 
 a {

@@ -88,12 +88,6 @@ span.socials {
     a {
         margin: 0 .5em;
     }
-
-    a:hover img {
-        filter: invert(1);
-        @extend %transitions;
-    
-    }
 }
 
 span.logo {
