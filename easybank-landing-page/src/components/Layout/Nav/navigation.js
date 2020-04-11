@@ -11,9 +11,8 @@ class Navigation extends Component {
             <a  className="nav-link" href="https://google.com">Contact</a>
             <a  className="nav-link" href="https://google.com">Blog</a>
             <a  className="nav-link" href="https://google.com">Careers</a>
-          </div>
-          
-      </nav>
+          </div>     
+        </nav>
       )
     }
   }
